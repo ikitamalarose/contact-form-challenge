@@ -1,0 +1,131 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <link rel="icon" type="image/png" sizes="32x32" href="./assets/images/favicon-32x32.png">
+  <link rel="stylesheet" href="./main.css">
+
+  <title>Frontend Mentor | Contact form</title>
+</head>
+
+<body>
+
+  <form class="form" action="" aria-labelledby="form-title">
+    <h1 id="form-title" class="form-title">Contact Us</h1>
+
+    <!-- Personal Information Section -->
+
+    <fieldset class="form__fieldset" aria-labelledby="personal-information">
+
+      <legend id="personal-information" class="form__legend" class="visuallyhidden">Your personal information</legend>
+
+      <div class="form__field">
+        <label for="first_name" class="form__label">First Name <span class="form__required">*</span></label>
+        <input type="text" name="first_name" id="first_name" class="form__input" required autocomplete="given-name"
+          aria-describedby="first-name-helper" />
+        <span id="first-name-helper" class="form__helper">This field is required</span>
+      </div>
+
+      <div class="form__field">
+        <label for="last_name" class="form__label">Last Name <span class="form__required">*</span></label>
+        <input type="text" name="last_name" id="last_name" class="form__input" required autocomplete="family-name"
+          aria-describedby="last-name-helper" />
+        <span id="last-name-helper" class="form__helper">This field is required</span>
+      </div>
+
+      <div class="form__field">
+        <label for="email" class="form__label">Last Name <span class="form__required">*</span></label>
+        <input type="email" name="email" id="email" class="form__input" required autocomplete="email"
+          aria-describedby="email-helper" />
+        <span id="email-helper" class="form__helper">
+          <span>This field is required</span>
+          <span>Please enter a valid email address</span>
+        </span>
+      </div>
+
+    </fieldset>
+
+    <!-- Query Type Section -->
+    <fieldset class="form__fieldset" aria-labelledby="query-type">
+      <legend id="query-type" class="form__legend">Query Type</legend>
+
+      <ul class="form__field form__list">
+
+        <li class="list-item">
+          <input type="radio" name="query-tap" id="general_enquiry" class="form__radio"
+            aria-describedby="query-type-helper">
+          <label for="general_enquiry" class="form__label">
+            General Enquiry <span class="form__required">*</span></p>
+          </label>
+        </li>
+
+        <li class="list-item">
+          <input type="radio" name="query-tap" id="support_request" class="form__radio"
+            aria-describedby="query-type-helper">
+          <label for="support_request" class="form__label">
+            Support Request <span class="form__required">*</span></p>
+          </label>
+        </li>
+
+      </ul>
+      <span id="query-type-helper">Please select a query type</span>
+
+    </fieldset>
+
+    <!-- Message Section -->
+    <fieldset class="form__fieldset" aria-labelledby="write-message">
+      <legend id="write-message" class="form__legend">Your Message</legend>
+
+      <div class="form__field">
+        <label for="message" class="form__label">Message <span class="form__required">*</span></label>
+        <textarea name="message" id="message" class="form__textarea" required
+          aria-describedby="message-helper"></textarea>
+        <span id="message-helper" class="form__helper">This field is required</span>
+      </div>
+
+    </fieldset>
+
+    <!-- Consent Section -->
+    <div class="form__consent">
+      <input type="checkbox" name="consent" id="consent" class="form__checkbox" required
+        aria-describedby="consent-helper" />
+      <label for="consent" class="form__label">I consent to being contacted by the team</label>
+      <span id="consent-helper" class="form__helper">To submit this form, please consent to being contacted</span>
+    </div>
+
+    <button class="form__button" id="submit-button" type="submit">Submit</button>
+  </form>
+
+  <!-- Success State -->
+  <section id="successState" class="success-state">
+    <h2 class="success-state__header">
+      <img src="./assets/images/icon-success-check.svg" alt="Success Check Icon" class="success-state__icon" />
+      Message Sent!
+    </h2>
+    <p class="success-state__text">Thanks for completing the form. We'll be in touch soon!</p>
+  </section>
+
+  <footer class="footer">
+    <p class="footer__text">
+      Challenge by
+      <a href="https://www.frontendmentor.io?ref=challenge" target="_blank" rel="noopener noreferrer"
+        class="footer__link" aria-label="Visit Frontend Mentor website for coding challenges">
+        Frontend Mentor
+      </a>
+      .
+    </p>
+
+    <p class="footer__text">
+      Coded by
+      <a href="https://www.frontendmentor.io/profile/ikitamalarose" class="footer__link"
+        aria-label="Visit the Frontend Mentor profile of Larose IKITAMA">
+        Larose IKITAMA
+      </a>
+    </p>
+  </footer>
+</body>
+
+</html>
